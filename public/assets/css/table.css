@@ -1,0 +1,96 @@
+.summary {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.summary table {
+    display: none;
+    width: 100%;
+}
+
+.summary table td:first-child {
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+.summary tr.-expanded > td > table {
+    display: table;
+}
+
+.summary td:first-child, .summary table td:first-child {
+    padding-left: 16px;
+}
+
+.summary th, .summary td {
+    vertical-align: middle;
+}
+
+.summary th {
+    text-align: center;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+}
+
+.summary td:not(:first-child) {
+    padding: 4px;
+    min-width: var(--summary-table-cell-width);
+    max-width: var(--summary-table-cell-width);
+    width: var(--summary-table-cell-width);
+    font-size: 10px;
+}
+
+.summary td:first-child {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.summary td:first-child button {
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    padding-right: 4px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.summary td, .summary th {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.summary td:not([colspan]) {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #d0d0d0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.summary .group td {
+    padding: 6px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+}
+
+.summary .total {
+    color: #000;
+    text-decoration: none;
+}
+
+.summary .total.-muted {
+    color: #777;
+}
+
+.summary .diff.pos {
+    color: #69AA46;
+}
+
+.summary .diff.neg {
+    color: #DD5A43;
+}
+
+.summary .-expanded + .gutter td {
+    padding: 4px;
+}
+

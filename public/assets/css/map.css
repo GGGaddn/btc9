@@ -1,0 +1,59 @@
+
+
+    .map svg{
+      width:100%;
+      margin-top: 2%; 
+      
+    }
+
+	.map a {
+	  color:   #29ACEC;
+
+	}
+    .map path{transition:all .5s;fill:rgba(0,0,0,0);stroke:rgba(0,0,0,0.5);}
+
+    .map .indicator{
+      position:absolute;
+      display:inline;
+      background:rgba(0,0,0,1);
+      color:#f1f1f1;
+      padding:10px 30px;
+      font:20px Arial;
+      border-radius:5px;
+      min-width:300px;
+      
+      text-transform:capitalize;
+      display:none;
+      
+
+    }
+
+    .map .flag {
+      width: 80px;
+    }
+
+    .map .clear{clear:both}
+    .map .name{float:left;margin-right:30px;}
+    /*.flag{position:absolute;top:10px;right:20px;border:3px solid #f7ffe8;border-radius:3px;
+    }*/
+
+    .map .regs {
+      columns: 5;
+      padding: 10px;
+    }
+
+    .map .reg span {
+      font-size: 10px;
+
+    }
+
+    .map .regs div {
+      width: auto;
+      font-size: 14px;
+      /* columns: 3;*/
+      cursor: pointer;
+
+    }
+
+
+    .map .capital{clear:both;}
